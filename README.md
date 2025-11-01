@@ -36,7 +36,7 @@ See `/routes/api.js` for full details.
 **Developers:**
 - Lakshdeep Singh ([GitHub](https://github.com/Lakshdeep12))
 - Vikram Patel ([GitHub](https://github.com/vikram-sp-21))
-- Vikram Patel ([GitHub](https://github.com/CodeCraz1011))
+- Lavanya Gehlot ([GitHub](https://github.com/CodeCraz1011))
 - [Add your name here!]
 
 
@@ -45,7 +45,7 @@ See `/routes/api.js` for full details.
 
 ## 🏁 Demo & SIH Pitch
 
-- **Works 100% offline on laptop (no cloud needed)**
+- **Works 100% offline on laptop (no cloud needed)** for Testing
 - **Real-time simulation with clear analytics and interactive safety maps**
 - **Hackathon-ready UI/UX: animated cards, Twitter-like news, rapid alert flows**
 - **Clear, impactful code for SIH jury evaluation and future social deployment**
