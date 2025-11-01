@@ -50,7 +50,7 @@ See `/routes/api.js` for full details.
 - **Hackathon-ready UI/UX: animated cards, Twitter-like news, rapid alert flows**
 - **Clear, impactful code for SIH jury evaluation and future social deployment**
 
-**Inspired by SIH winners. Committed to women’s safety.**
+**Inspired by SIH. Committed to women’s safety.**
 
 ---
 
