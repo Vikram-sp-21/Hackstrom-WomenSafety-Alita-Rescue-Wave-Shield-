@@ -1,5 +1,8 @@
 # Hackstrom-WomenSafety-Alita-Rescue-Wave-Shield-
 
+We have created Website for the Admin Panel and Application for the user
+both will interact with each other
+
 Structure daigram --
 
 women-safety-analytics/
