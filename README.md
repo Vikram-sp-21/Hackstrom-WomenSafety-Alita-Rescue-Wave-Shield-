@@ -1,6 +1,6 @@
 # Hackstrom-WomenSafety-Alita-Rescue-Wave-Shield-
 
-Structure daigram
+Structure daigram --
 
 women-safety-analytics/
 ├── public/
