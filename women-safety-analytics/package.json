@@ -1,0 +1,36 @@
+{
+  "name": "women-safety-analytics",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "alerts": [
+    {
+      "name": "Priya Singh",
+      "age": "21",
+      "contact": "+91-12345-67890",
+      "status": "Danger",
+      "lat": 28.6139,
+      "lng": 77.2090,
+      "timestamp": "2025-11-01T07:34:00Z"
+    },
+    {
+      "name": "Ananya Sharma",
+      "age": "24",
+      "contact": "+91-98765-43210",
+      "status": "Safe",
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "timestamp": "2025-11-01T07:36:00Z"
+    }
+  ]
+}

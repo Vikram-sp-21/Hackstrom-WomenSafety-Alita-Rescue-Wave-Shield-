@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register – Women Safety Analytics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600|Poppins:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo">Alita Rescue Wave Shield</div>
+    <ul>
+      <!-- <li><a href="index.html">Home</a></li>
+      <li><a href="live.html">Live Feed</a></li>
+      <li><a href="analytics.html">Analytics</a></li>
+      <li><a href="alerts.html">Alerts</a></li> -->
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <main class="register-main aos-fade-up">
+    <div class="register-card">
+      <h2>Create Your Account</h2>
+      <form id="registerForm">
+        <label for="regName">Name</label>
+        <input type="text" id="regName" required autocomplete="name">
+
+        <label for="regEmail">Email</label>
+        <input type="email" id="regEmail" required autocomplete="email">
+
+        <label for="regRole">Role</label>
+        <select id="regRole" required>
+          <option value="" disabled selected>Select role</option>
+          <option value="User">User</option>
+          <option value="Admin">Admin</option>
+        </select>
+
+        <label for="regPassword">Password</label>
+        <input type="password" id="regPassword" required autocomplete="new-password">
+
+        <button type="submit" class="register-btn">Register</button>
+      </form>
+      <div id="registerMsg" class="register-msg"></div>
+    </div>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+</html>

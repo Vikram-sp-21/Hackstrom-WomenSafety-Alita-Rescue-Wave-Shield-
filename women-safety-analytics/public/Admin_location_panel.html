@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel – Track & Respond</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,600|Poppins:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Alita Rescue Wave Shield – Admin Panel</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="live.html">Live Feed</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="admin-panel.html" class="active">Admin Panel</a></li>
+        </ul>
+    </nav>
+
+    <main class="admin-main aos-fade-up">
+        <h2>Live SOS Tracking & Response</h2>
+        <section class="track-section">
+            <div class="track-left">
+                <div class="user-location-card">
+                    <h3>User SOS Sent</h3>
+                    <p>
+                        <strong>Name:</strong> Priya Singh<br>
+                        <strong>Last Location:</strong> <span id="userLocation">28.6139, 77.2090 (Connaught Place,
+                            Delhi)</span>
+                    </p>
+                    <button class="share-btn" onclick="shareLocation()">Share Location</button>
+                    <div class="share-platforms" id="sharePlatforms" style="display:none;">
+                        <button
+                            onclick="window.open('https://wa.me/?text='+encodeURIComponent(shareMsg),'_blank')">WhatsApp</button>
+                        <button
+                            onclick="window.open('mailto:?subject=SOS%20Location&body='+encodeURIComponent(shareMsg))">Email</button>
+                        <button
+                            onclick="window.open('https://www.facebook.com/sharer.php?u='+encodeURIComponent(mapUrl),'_blank')">Facebook</button>
+                        <!-- Add more platforms as needed -->
+                    </div>
+                    <button class="respond-btn" onclick="sendDefaultMsg()">Send 'Team Nearby' Msg</button>
+                </div>
+                <div class="new-route-card">
+                    <h3>Create New Safe Route</h3>
+                    <button class="route-btn" onclick="setSafeRoute()">Set Safe Route To Location</button>
+                </div>
+            </div>
+            <div class="track-right">
+                <div id="map" style="height: 380px; width: 100%; border-radius:16px; box-shadow: 0 2px 16px #17234740;">
+                </div>
+                <div class="person-info-card" id="personInfoCard">
+                    <!-- Info loads here -->
+                </div>
+                <div id="map" style="height: 380px; width: 100%; border-radius:16px; box-shadow: 0 2px 16px #17234740;">
+                </div>
+                
+
+            </div>
+            <div class="more-sos-section aos-fade-up">
+                <h3>Other SOS Requests</h3>
+                <div class="sos-grid" id="sosGrid">
+                    <!-- SOS cards will appear here -->
+                </div>
+            </div>
+            <div class="upcoming-requests-section aos-fade-up">
+                <h3>Upcoming SOS Requests for Help</h3>
+                <div class="upcoming-requests-grid" id="upcomingRequestsGrid">
+                  <!-- Requests load here -->
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Analytics – Women Safety Analytics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">Alita Rescue Wave Shield</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="live.html">Live Feed</a></li>
+      <li><a href="analytics.html" class="active">Analytics</a></li>
+      <li><a href="alerts.html">Alerts</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <main class="analytics-main aos-fade-up">
+    <h2>Real-Time Case Analytics</h2>
+
+    <!-- Cards Section -->
+    <div class="stat-cards">
+      <div class="stat-card danger aos-fade-up">
+        <div class="stat-icon">⚠️</div>
+        <h3>Danger Cases</h3>
+        <div class="stat-num" id="dangerCount">43</div>
+      </div>
+      <div class="stat-card rape aos-fade-up">
+        <div class="stat-icon">🚨</div>
+        <h3>Rape Cases</h3>
+        <div class="stat-num" id="rapeCount">6</div>
+      </div>
+      <div class="stat-card safe aos-fade-up">
+        <div class="stat-icon">🟢</div>
+        <h3>Safe Cases</h3>
+        <div class="stat-num" id="safeCount">237</div>
+      </div>
+    </div>
+
+    <!-- Chart Section -->
+    <section class="charts-grid">
+      <div class="chart-box aos-fade-up">
+        <h4>Weekly Case Trends</h4>
+        <canvas id="caseTrendChart"></canvas>
+      </div>
+      <div class="chart-box aos-fade-up">
+        <h4>Cases Breakdown</h4>
+        <canvas id="casePieChart"></canvas>
+      </div>
+    </section>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+</html>

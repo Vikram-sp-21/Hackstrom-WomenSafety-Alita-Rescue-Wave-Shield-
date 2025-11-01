@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alita Rescue Wave Shield – Real-Time Awareness for Safer Communities</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600|Inter:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo">Alita Rescue Wave Shield</div>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="live.html">Live Feed</a></li>
+      <li><a href="analytics.html">Analytics</a></li>
+      <li><a href="alerts.html">Alerts</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <div class="profile-bar">
+      <button class="profile-icon-btn" onclick="showProfileModal()">
+        <img src="WhatsApp Image 2025-11-01 at 04.02.12_b27562ff.jpg" class="profile-icon-img" alt="Profile"/>
+      </button>
+    </div>
+    
+    <!-- Profile Modal Popup -->
+    <div id="profileModal" class="profile-modal-bg" style="display:none;">
+      <div class="profile-modal-card">
+        <span class="close-modal" onclick="hideProfileModal()">&times;</span>
+        <img src="WhatsApp Image 2025-11-01 at 04.02.12_b27562ff.jpg" class="profile-modal-photo" alt="Profile"/>
+        <h2>Ananya Sharma</h2>
+        <p>Age:-21     Gender:-Female<br>
+          <a href="mailto:ananya.sharma@sih2024.in">ananya.sharma@sih2024.in</a>
+        </p>
+        <button class="logout-btn" onclick="logoutProfile()">Logout</button>
+      </div>
+    </div>
+      <!-- <li><a href="login.html">Login</a></li> -->
+    </ul>
+    <button class="mode-toggle" id="modeToggle">🌙</button>
+    
+  </nav>
+  <header class="hero">
+    <div class="hero-text aos-fade-right">
+      <h1>Real-Time Awareness for Safer Communities</h1>
+      <p>Women Safety Analytics demo platform addresses SIH 1605 by providing powerful real-time monitoring, actionable analytics, and rapid alert management.</p>
+      <button onclick="window.location='Admin_location_panel.html'" class="cta-button">Explore Live Dashboard</button>
+    </div>
+    <div class="hero-image aos-fade-left">
+      <img src="woman-checkng-her-phone-alone-at-night.webp" alt="Women Safety Illustration" />
+    </div>
+  </header>
+  <section class="mission aos-fade-up">
+    <h2>Our Mission</h2>
+    <p>These features go beyond basic SOS alerts and GPS tracking by making the app proactive, intelligent, and adaptive. They leverage AI and advanced technologies to create a safety ecosystem that learns from user behavior and environmental data, offering unmatched protection and peace of mind</p>
+  </section>
+  <footer>
+    &copy; 2025 Women Safety Analytics.
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>
